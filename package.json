@@ -1,0 +1,29 @@
+{
+  "name": "online-stats",
+  "version": "1.0.0",
+  "description": "Online algorithms for data exploration and analysis (piece-by-piece)",
+  "main": "index.js",
+  "dependencies": {
+    "online-max": "^1.0.0",
+    "online-mean": "^1.0.1",
+    "online-min": "^1.0.1",
+    "online-variance": "^1.0.0"
+  },
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "tape": "^4.9.0"
+  },
+  "scripts": {
+    "test": "tape test.js | faucet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onlinestats/online-stats.git"
+  },
+  "author": "Anton Zemlyansky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/onlinestats/online-stats/issues"
+  },
+  "homepage": "https://github.com/onlinestats/online-stats#readme"
+}
