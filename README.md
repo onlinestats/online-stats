@@ -13,8 +13,8 @@ To process data sequentially we need functions to have internal state.
 That's why there's one extra step - functions initialization
 
 ```javasctipt
-mean = Stats.Mean() // -> function
-median = Stats.Median() // -> function
+const mean = Stats.Mean() // -> function
+const median = Stats.Median() // -> function
 ...
 ```
 
