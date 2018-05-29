@@ -3,10 +3,19 @@ var Stats = require('./index')
 
 var values = [1, 3, 5, NaN, 'Bob', '6', 8]
 
-test('Population variance: NaN and Strings', (_) => {
+test('Population variance, mean, median: NaN and Strings', (_) => {
   var variance = Stats.Variance()
-  values.forEach(v => { variance(v) })
+  var median = Stats.Median()
+  var mean = Stats.Mean()
+
+  values.forEach(v => {
+    variance(v)
+    mean(v)
+    median(v)
+  })
   _.true(variance() - 5.84 < 0.0000001)
+  _.true(mean() - 4.6 < 0.0000001)
+  _.true(median() === 5)
   _.end()
 })
 
