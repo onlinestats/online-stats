@@ -55,5 +55,44 @@ console.log(median()) // -> 2
 ```
 
 ### Min
-### Max
+```javascript
+const min = Stats.Min()
 
+min(2) // -> 2
+min(6) // -> 2
+min(1) // -> 1
+
+console.log(min()) // -> 1
+```
+
+### Max
+```javascript
+const max = Stats.Max()
+
+max(2) // -> 2
+max(6) // -> 6
+max(1) // -> 6
+
+console.log(max()) // -> 6
+```
+
+### Standard Deviation
+```javascript
+const std = Stats.Std({ddof: 1}) // 0 (default) - population std, 1 - sample std (unbiased)
+
+std(1) // -> 0
+std(2) // ~> 0.7071
+std(9) // ~> 4.3589
+
+console.log(std()) // ~> 4.3589
+```
+
+### Covariance
+```javascript
+const a = [1, 3, 2, 5, 8, 7, 12, 2, 4]
+const b = [8, 6, 9, 4, 3, 3, 2, 7, 7]
+const cov = Stats.Covariance({ddof: 1})
+
+a.forEach((ax, i) => { cov(ax, b[i]) })
+console.log(cov()) // -> -8.069
+```

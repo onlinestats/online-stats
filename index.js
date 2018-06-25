@@ -3,5 +3,7 @@ module.exports = {
   Variance: require('online-variance'),
   Min: require('online-min'),
   Max: require('online-max'),
-  Median: require('online-median')
+  Median: require('online-median'),
+  Std: require('online-std'),
+  Covariance: require('online-covariance')
 }
