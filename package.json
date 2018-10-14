@@ -1,11 +1,12 @@
 {
   "name": "online-stats",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Online algorithms for data exploration and analysis (piece-by-piece)",
   "main": "index.js",
   "dependencies": {
     "online-covariance": "^1.0.2",
     "online-group": "0.0.1",
+    "online-linear-regression": "^1.0.0",
     "online-max": "^1.0.0",
     "online-mean": "^1.0.1",
     "online-median": "^1.0.1",
