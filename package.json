@@ -1,6 +1,6 @@
 {
   "name": "online-stats",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Online algorithms for data exploration and analysis (piece-by-piece)",
   "main": "index.js",
   "dependencies": {

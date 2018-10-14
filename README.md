@@ -96,3 +96,9 @@ const cov = Stats.Covariance({ddof: 1})
 a.forEach((ax, i) => { cov(ax, b[i]) })
 console.log(cov()) // -> -8.069
 ```
+
+### Linear regression
+
+### Group
+
+### Series
