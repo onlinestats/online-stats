@@ -1,19 +1,21 @@
 {
   "name": "online-stats",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Online algorithms for data exploration and analysis (piece-by-piece)",
   "main": "index.js",
   "dependencies": {
+    "online-autocovariance": "^0.0.1",
     "online-covariance": "^1.0.2",
-    "online-group": "0.0.1",
+    "online-group": "^0.0.1",
+    "online-lag": "^0.0.3",
     "online-linear-regression": "^1.0.0",
     "online-max": "^1.0.1",
-    "online-mean": "^1.1.1",
+    "online-mean": "^1.1.2",
     "online-median": "^1.0.3",
     "online-min": "^1.0.2",
-    "online-series": "0.0.1",
+    "online-series": "^0.0.1",
     "online-std": "^1.0.2",
-    "online-variance": "^1.0.1"
+    "online-variance": "^1.0.2"
   },
   "devDependencies": {
     "faucet": "0.0.1",

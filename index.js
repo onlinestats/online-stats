@@ -8,5 +8,7 @@ module.exports = {
   Covariance: require('online-covariance'),
   LinReg: require('online-linear-regression'),
   Series: require('online-series'),
-  Group: require('online-group')
+  Group: require('online-group'),
+  Lag: require('online-lag'),
+  AutoCov: require('online-autocovariance')
 }
