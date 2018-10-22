@@ -1,14 +1,15 @@
 module.exports = {
-  Mean: require('online-mean'),
-  Variance: require('online-variance'),
-  Min: require('online-min'),
-  Max: require('online-max'),
-  Median: require('online-median'),
-  Std: require('online-std'),
+  AutoCov: require('online-autocovariance'),
   Covariance: require('online-covariance'),
-  LinReg: require('online-linear-regression'),
-  Series: require('online-series'),
+  Count: require('online-count'),
   Group: require('online-group'),
   Lag: require('online-lag'),
-  AutoCov: require('online-autocovariance')
+  LinReg: require('online-linear-regression'),
+  Max: require('online-max'),
+  Mean: require('online-mean'),
+  Median: require('online-median'),
+  Min: require('online-min'),
+  Std: require('online-std'),
+  Series: require('online-series'),
+  Variance: require('online-variance')
 }
