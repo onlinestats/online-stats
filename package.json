@@ -1,6 +1,6 @@
 {
   "name": "online-stats",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Online algorithms for data exploration and analysis (piece-by-piece)",
   "main": "index.js",
   "dependencies": {
@@ -8,6 +8,7 @@
     "online-count": "^0.0.2",
     "online-covariance": "^1.0.2",
     "online-group": "^0.0.1",
+    "online-histogram": "0.0.1",
     "online-lag": "^0.0.3",
     "online-linear-regression": "^1.0.0",
     "online-max": "^1.0.1",
