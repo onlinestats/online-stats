@@ -97,6 +97,19 @@ a.forEach((ax, i) => { cov(ax, b[i]) })
 console.log(cov()) // -> -8.069
 ```
 
+### Histogram
+[https://github.com/onlinestats/online-histogram](https://github.com/onlinestats/online-histogram)
+
+```javascript
+const hist = Stats.Histogram(20)
+
+hist(2)
+hist(6)
+hist(1)
+
+console.log(hist.value)
+```
+
 ### Linear regression
 
 ### Group

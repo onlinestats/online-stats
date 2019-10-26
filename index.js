@@ -3,6 +3,7 @@ module.exports = {
   Covariance: require('online-covariance'),
   Count: require('online-count'),
   Group: require('online-group'),
+  Histogram: require('online-histogram'),
   Lag: require('online-lag'),
   LinReg: require('online-linear-regression'),
   Max: require('online-max'),
