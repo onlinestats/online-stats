@@ -1,9 +1,10 @@
 {
   "name": "online-stats",
-  "version": "1.4.3",
+  "version": "1.5.0",
   "description": "Online algorithms for data exploration and analysis (piece-by-piece)",
   "main": "index.js",
   "dependencies": {
+    "online-autocorrelation": "0.0.1",
     "online-autocovariance": "^0.0.1",
     "online-count": "^0.0.2",
     "online-covariance": "^1.0.2",
@@ -30,6 +31,12 @@
     "type": "git",
     "url": "git+https://github.com/onlinestats/online-stats.git"
   },
+  "keywords": [
+    "statistics", "exploratory analysis", "online algorithm",
+    "autocorrelation", "autocovariance", "covariance",
+    "histogram", "lag", "regression", "mean", "median",
+    "std", "variance"
+  ],
   "author": "Anton Zemlyansky",
   "license": "ISC",
   "bugs": {

@@ -1,20 +1,24 @@
 # online-stats
-Online algorithms for data exploration and analysis
+
+Collection of online algorithms for data exploration and analysis. Online algorithms process inputs piece by piece.
+That means you can process data without storing it in memory. More about [online algorithms](https://en.wikipedia.org/wiki/Online_algorithm)
+
+Most algorithms of `online-stats` also support more usual batch mode (i.e. `mean([1,2,3,4])`)
 
 ## Installation
 `npm i -S online-stats`
 
 ## Usage
 ```javasctipt
-const Stats = require('online-stats') // -> { Mean, Median, Max, Min, ... }
+const Stats = require('online-stats') // { Mean, Median, Max, Min, ... }
 ```
 
-To process data sequentially we need functions to have internal state. 
+To process data sequentially we need functions to have internal state.
 That's why there's one extra step - functions initialization
 
 ```javasctipt
-const mean = Stats.Mean() // -> function
-const median = Stats.Median() // -> function
+const mean = Stats.Mean() // -> function mean
+const median = Stats.Median() // -> function median
 ...
 ```
 
@@ -98,8 +102,6 @@ console.log(cov()) // -> -8.069
 ```
 
 ### Histogram
-[https://github.com/onlinestats/online-histogram](https://github.com/onlinestats/online-histogram)
-
 ```javascript
 const hist = Stats.Histogram(20)
 
@@ -107,11 +109,33 @@ hist(2)
 hist(6)
 hist(1)
 
-console.log(hist.value)
+console.log(hist())
+```
+
+### Autocovariance
+```javascript
+const autocov = Stats.AutoCov(5)
+
+;[1, 2, 3, 4, 5, 6, 7].forEach(v => { autocov(v) })
+
+console.log(autocov())
+```
+
+### Autocorrelation
+```javascript
+const autocor = Stats.AutoCor(5)
+
+;[1, 2, 3, 4, 5, 6, 7].forEach(v => { autocor(v) })
+
+console.log(autocor())
 ```
 
 ### Linear regression
+```javascript
+const lr = Stats.LinReg()
 
-### Group
+const f = x => 0.5 * x + 2
+;[1, 2, 3, 4, 5, 6].forEach(v => { lr(v, f(v)) })
 
-### Series
+console.log(lr([7])) // Predict
+```

@@ -1,4 +1,5 @@
 module.exports = {
+  AutoCor: require('online-autocorrelation'),
   AutoCov: require('online-autocovariance'),
   Covariance: require('online-covariance'),
   Count: require('online-count'),
