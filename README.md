@@ -1,7 +1,6 @@
-# online-stats
+# Online statistical algorithms for browsers and Node.js
 
-Collection of online algorithms for data exploration and analysis. Online algorithms process inputs piece by piece.
-That means you can process data without storing it in memory. More about [online algorithms](https://en.wikipedia.org/wiki/Online_algorithm)
+Collection of online algorithms for data exploration and analysis implemented in JavaScript. Online algorithms process inputs piece by piece. That means you can process data without storing it in memory. More about online algorithms: [https://en.wikipedia.org/wiki/Online_algorithm](https://en.wikipedia.org/wiki/Online_algorithm)
 
 Most algorithms of `online-stats` also support more usual batch mode (i.e. `mean([1,2,3,4])`)
 
@@ -24,6 +23,9 @@ const median = Stats.Median() // -> function median
 
 When functions are initialized, just call them passing a value (for example: `mean(x)`).
 Result is returned. To get a final result just call a function without any params: `const result = mean()`
+
+### Web demo
+Check how the `online-stats` package is used for online data profiling on [StatSim Profile](https://statsim.com/profile)
 
 ### Mean
 ```javascript
